@@ -62,7 +62,7 @@ class MyNanoHTTPD extends NanoHTTPD {
         this.method = session.getMethod();
         this.header = session.getHeaders();
         this.parms = session.getParms();
-        Log.d("uri=", "-----uri--->" + this.uri + "-----method--->" + this.method + "-----headeer--->" + this.header + "-----parms--->" + this.parms);
+        Log.d("uri=", "----uri--->" + this.uri + "-----method--->" + this.method + "-----headeer--->" + this.header + "-----parms--->" + this.parms);
 
         String msg = "<html><body> \n <form enctype=multipart/form-data  method=post >\n  <input type=file id=datafile1 name=file size= 40 ><br>\n <input type=submit> \n </form>";
         try {
